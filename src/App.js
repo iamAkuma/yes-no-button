@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+const getRandomPosition = () => ({
+  top: `${Math.random() * 70}vh`,
+  left: `${Math.random() * 70}vw`,
+});
+
+const App = () => {
+  const [noButtonPosition, setNoButtonPosition] = useState(getRandomPosition());
+
+  const handleNoButtonClick = () => {
+    setNoButtonPosition(getRandomPosition());
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container"> {/* Use className instead of style */}
+      <div className="box"> {/* Use className instead of style */}
+        <button className="button">Yes</button> {/* Use className instead of style */}
+        <button className="button" style={noButtonPosition} onClick={handleNoButtonClick}>
+          No
+        </button>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
