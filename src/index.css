@@ -20,17 +20,13 @@ code {
 }
 
 .box {
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  background: #ffffff; /* White background */
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .button {
+  position: absolute; /* Ensure absolute positioning for both buttons */
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
