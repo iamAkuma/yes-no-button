@@ -11,32 +11,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f0f0f0; /* Light gray background */
-}
-
-.box {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.button {
-  position: absolute; /* Ensure absolute positioning for both buttons */
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background: #4caf50; /* Green button */
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-  transition: transform 0.2s ease; /* Smooth transition */
-}
 
 .button:hover {
   transform: scale(1.1);
