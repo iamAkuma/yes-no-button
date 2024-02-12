@@ -1,15 +1,34 @@
+/* styles.css */
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f0f0f0; /* Light gray background */
+  background: #4caf50; /* Fallback color */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .box {
+  position: relative; /* Set box position to relative */
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 20px; /* Rounded border */
+  padding: 20px; /* Add padding */
+}
+
+.buttons-container {
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
 .button {
@@ -17,13 +36,12 @@
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background: #4caf50; /* Green button */
+  background: #ff6f61; /* Updated button color */
   color: white;
   font-size: 16px;
   cursor: pointer;
   outline: none;
   transition: transform 0.2s ease; /* Smooth transition */
-  position: absolute;
 }
 
 .button:hover {
